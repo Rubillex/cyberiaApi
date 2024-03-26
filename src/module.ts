@@ -29,7 +29,7 @@ export default defineNuxtModule<ModuleOptions>({
         public: {},
       };
     }
-
+    // @ts-ignore
     if (!nuxt.options.runtimeConfig.public) nuxt.options.runtimeConfig.public = {};
 
     nuxt.options.runtimeConfig.public.cyberiaApi = options;

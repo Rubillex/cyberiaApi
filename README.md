@@ -63,10 +63,17 @@ export default defineNuxtConfig({
 
 ## Usage
 
-```js
+```ts
+interface Response {
+  message: string;
+  data: string[];
+}
+
 const { data: testData } = await useAsyncData(
-  () => $fetch(`/test`)
+  () => $cyberiaApi<Response>(`/test`)
 );
+
+console.log(testData.value.message);
 ```
 
 In this case, the testData variable will contain the response from https://example.com/test.

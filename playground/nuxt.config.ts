@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   modules: ['../src/module'],
   cyberiaApi: {
     accessTokenName: 'access-token',
-    baseUrl: 'https://example.com/',
+    baseUrl: 'http://localhost:8000/api',
   },
   devtools: {enabled: true}
 })

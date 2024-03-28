@@ -41,7 +41,7 @@ export default defineNuxtConfig({
 })
 ```
 
-That's it! You can now use frog-modal in your Nuxt app ✨
+That's it! You can now use $cyberiaApi in your Nuxt app ✨
 
 ## Preparation
 

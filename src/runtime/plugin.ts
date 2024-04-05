@@ -1,6 +1,6 @@
 import {defineNuxtPlugin} from '#app'
 import {type $Fetch, ofetch} from 'ofetch'
-import {useRuntimeConfig} from "nuxt/app";
+import { useRuntimeConfig } from "nuxt/app";
 
 declare global {
   var $cyberiaApi: $Fetch;
@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(async (nuxtApp) => {
   const config = useRuntimeConfig();
   const ACCESS_TOKEN_NAME = config.public.cyberiaApi.accessTokenName;
 
@@ -24,7 +24,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       if (parts.length === 2) {
         // @ts-ignore
         const access_token = parts.pop().split(';').shift();
-        options.headers = {...options.headers, Authorization: `Bearer ${access_token}`};
+        options.headers = {...options.headers, Authorization: `Bearer ${decodeURIComponent(access_token ?? '')}`};
       }
     },
   })

@@ -1,8 +1,8 @@
 {
-  "name": "cyberia-api",
-  "version": "1.1.1",
-  "description": "CyberiaApi module",
-  "repository": "Rubillex/cyberiaApi",
+  "name": "r-fetch",
+  "version": "1.0.0",
+  "description": "rFetch module",
+  "repository": "Rubillex/rFetch",
   "license": "MIT",
   "type": "module",
   "exports": {

@@ -7,7 +7,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 - Description: My new Nuxt module
 -->
 
-# Cyberia API
+# Rubillex/rFetch
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -18,25 +18,25 @@ My new Nuxt module for doing amazing things.
 
 ## Quick Setup
 
-1. Add `cyberia-api` dependency to your project
+1. Add `r-fetch` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add cyberia-api
+pnpm add r-fetch
 
 # Using yarn
-yarn add cyberia-api
+yarn add r-fetch
 
 # Using npm
-npm install cyberia-api
+npm install r-fetch
 ```
 
-2. Add `cyberia-api` to the `modules` section of `nuxt.config.ts`
+2. Add `r-fetch` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
   modules: [
-    'cyberia-api'
+    'r-fetch'
   ]
 })
 ```
@@ -50,10 +50,15 @@ Add module the config to nuxt.config.ts
 ```js
 export default defineNuxtConfig({
   ...
-    cyberiaApi: {
-        accessTokenName: 'access-token',
-        baseUrl: 'https://example.com/'
-    },
+    rFetch
+:
+{
+  accessTokenName: 'access-token',
+    baseUrl
+:
+  'https://example.com/'
+}
+,
 })
 ```
 
@@ -69,8 +74,8 @@ interface Response {
   data: string[];
 }
 
-const { data: testData } = await useAsyncData(
-  () => $cyberiaApi<Response>(`/test`)
+const {data: testData} = await useAsyncData(
+  () => $rFetch<Response>(`/test`)
 );
 
 console.log(testData.value.message);
@@ -85,14 +90,19 @@ If there is a cookie named access-token, the following line will be added to the
 ```
 
 <!-- Badges -->
+
 [npm-version-src]: https://img.shields.io/npm/v/cyberia-api/latest.svg?style=flat&colorA=020420&colorB=00DC82
+
 [npm-version-href]: https://npmjs.com/package/cyberia-api
 
 [npm-downloads-src]: https://img.shields.io/npm/dm/cyberia-api.svg?style=flat&colorA=020420&colorB=00DC82
+
 [npm-downloads-href]: https://npmjs.com/package/cyberia-api
 
 [license-src]: https://img.shields.io/npm/l/cyberia-api.svg?style=flat&colorA=020420&colorB=00DC82
+
 [license-href]: https://npmjs.com/package/cyberia-api
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
+
 [nuxt-href]: https://nuxt.com

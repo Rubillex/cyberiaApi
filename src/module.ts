@@ -10,8 +10,8 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'cyberia-api',
-    configKey: 'cyberiaApi',
+    name: 'r-fetch',
+    configKey: 'rFetch',
     compatibility: {
       nuxt: '^3.0.0'
     }
@@ -32,12 +32,12 @@ export default defineNuxtModule<ModuleOptions>({
     // @ts-ignore
     if (!nuxt.options.runtimeConfig.public) nuxt.options.runtimeConfig.public = {};
 
-    nuxt.options.runtimeConfig.public.cyberiaApi = options;
+    nuxt.options.runtimeConfig.public.rFetch = options;
 
-    const resolver = createResolver(import.meta.url)
+    const resolver = createResolver(import.meta.url);
 
     const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url));
-    nuxt.options.build.transpile.push(runtimeDir)
+    nuxt.options.build.transpile.push(runtimeDir);
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))

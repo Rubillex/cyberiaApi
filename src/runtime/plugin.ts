@@ -3,20 +3,20 @@ import {type $Fetch, ofetch} from 'ofetch'
 import { useRuntimeConfig } from "nuxt/app";
 
 declare global {
-  var $cyberiaApi: $Fetch;
+  var $rFetch: $Fetch;
   namespace NodeJS {
     interface Global {
-      $cyberiaApi: $Fetch;
+      $rFetch: $Fetch;
     }
   }
 }
 
-export default defineNuxtPlugin(async (nuxtApp) => {
+export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig();
-  const ACCESS_TOKEN_NAME = config.public.cyberiaApi.accessTokenName;
+  const ACCESS_TOKEN_NAME = config.public.rFetch.accessTokenName;
 
-  globalThis.$cyberiaApi = ofetch.create({
-    baseURL: config.public.cyberiaApi.baseUrl,
+  globalThis.$rFetch = ofetch.create({
+    baseURL: config.public.rFetch.baseUrl,
     onRequest({options}) {
 
       const value = `; ${document.cookie}`;

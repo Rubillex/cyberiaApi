@@ -18,12 +18,7 @@ interface ResponseWithList<T> {
 }
 
 const {data: testData} = await useAsyncData(
-  () => $cyberiaApi<ResponseWithList<Category>>(`/categories`, {
-    headers: {
-      'X-Test': `test`,
-    }
-  },), {server: false}
+  () => $rFetch(`/dictionaries?by_name=drivers,transport_vehicles`, {},), {server: false}
 );
-
-console.log(testData.value?.result.data.find((i) => i.id === 1)?.name);
+console.log('testData', testData.value);
 </script>

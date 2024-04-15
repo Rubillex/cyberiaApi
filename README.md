@@ -70,7 +70,7 @@ interface Response {
 }
 
 const {data: testData} = await useAsyncData(
-  () => $rFetch<Response>(`/test`)
+  () => $rubiFetch<Response>(`/test`)
 );
 
 console.log(testData.value.message);

@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(async(nuxtApp) => {
   const config = useRuntimeConfig();
   const ACCESS_TOKEN_NAME = config.public.rFetch.accessTokenName;
 

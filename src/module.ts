@@ -10,7 +10,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'r-fetch',
+    name: '@nuxt/r-fetch',
     configKey: 'rFetch',
     compatibility: {
       nuxt: '^3.0.0'

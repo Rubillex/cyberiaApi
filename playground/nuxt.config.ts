@@ -1,8 +1,8 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  cyberiaApi: {
+  rFetch: {
     accessTokenName: 'access-token',
     baseUrl: 'http://localhost:8000/api',
   },
   devtools: {enabled: true}
-})
+});

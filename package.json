@@ -1,5 +1,5 @@
 {
-  "name": "@nuxt/r-fetch",
+  "name": "r-fetch",
   "version": "1.0.0",
   "description": "rFetch module",
   "repository": "Rubillex/rFetch",

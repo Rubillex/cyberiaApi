@@ -18,25 +18,25 @@ My new Nuxt module for doing amazing things.
 
 ## Quick Setup
 
-1. Add `@nuxt/r-fetch` dependency to your project
+1. Add `r-fetch` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add @nuxt/r-fetch
+pnpm add r-fetch
 
 # Using yarn
-yarn add @nuxt/r-fetch
+yarn add r-fetch
 
 # Using npm
-npm install @nuxt/r-fetch
+npm install r-fetch
 ```
 
-2. Add `@nuxt/r-fetch` to the `modules` section of `nuxt.config.ts`
+2. Add `r-fetch` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/r-fetch'
+    'r-fetch'
   ]
 })
 ```

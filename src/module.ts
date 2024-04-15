@@ -10,7 +10,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@nuxt/r-fetch',
+    name: 'r-fetch',
     configKey: 'rFetch',
     compatibility: {
       nuxt: '^3.0.0'
@@ -18,7 +18,8 @@ export default defineNuxtModule<ModuleOptions>({
   },
   defaults: {
     accessTokenName: 'access_token',
-    baseUrl: '/'
+    baseUrl: '/',
+    enableCustomCallback: false,
   },
   setup(options, nuxt) {
     if (!nuxt.options.runtimeConfig) {

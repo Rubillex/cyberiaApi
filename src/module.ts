@@ -10,8 +10,8 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'r-fetch',
-    configKey: 'rFetch',
+    name: 'rubi-fetch',
+    configKey: 'rubiFetch',
     compatibility: {
       nuxt: '^3.0.0'
     }
@@ -32,7 +32,7 @@ export default defineNuxtModule<ModuleOptions>({
     // @ts-ignore
     if (!nuxt.options.runtimeConfig.public) nuxt.options.runtimeConfig.public = {};
 
-    nuxt.options.runtimeConfig.public.rFetch = options;
+    nuxt.options.runtimeConfig.public.rubiFetch = options;
 
     const resolver = createResolver(import.meta.url);
 

@@ -1,8 +1,8 @@
 {
-  "name": "r-fetch",
+  "name": "rubi-fetch",
   "version": "1.0.0",
-  "description": "rFetch module",
-  "repository": "Rubillex/rFetch",
+  "description": "rubiFetch module",
+  "repository": "Rubillex/rubiFetch",
   "license": "MIT",
   "type": "module",
   "exports": {

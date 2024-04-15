@@ -3,20 +3,20 @@ import {type $Fetch, ofetch} from 'ofetch'
 import { useRuntimeConfig } from "nuxt/app";
 
 declare global {
-  var $rFetch: $Fetch;
+  var $rubiFetch: $Fetch;
   namespace NodeJS {
     interface Global {
-      $rFetch: $Fetch;
+      $rubiFetch: $Fetch;
     }
   }
 }
 
 export default defineNuxtPlugin(async(nuxtApp) => {
   const config = useRuntimeConfig();
-  const ACCESS_TOKEN_NAME = config.public.rFetch.accessTokenName;
+  const ACCESS_TOKEN_NAME = config.public.rubiFetch.accessTokenName;
 
-  globalThis.$rFetch = ofetch.create({
-    baseURL: config.public.rFetch.baseUrl,
+  globalThis.$rubiFetch = ofetch.create({
+    baseURL: config.public.rubiFetch.baseUrl,
     onRequest({options}) {
 
       const value = `; ${document.cookie}`;

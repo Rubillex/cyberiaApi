@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  rFetch: {
+  rubiFetch: {
     accessTokenName: 'access-token',
     baseUrl: 'http://localhost:8000/api',
   },

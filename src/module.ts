@@ -19,7 +19,6 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     accessTokenName: 'access_token',
     baseUrl: '/',
-    enableCustomCallback: false,
   },
   setup(options, nuxt) {
     if (!nuxt.options.runtimeConfig) {

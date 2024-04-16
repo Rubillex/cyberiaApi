@@ -86,17 +86,17 @@ If there is a cookie named access-token, the following line will be added to the
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/cyberia-api/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-src]: https://img.shields.io/npm/v/rubi-fetch/latest.svg?style=flat&colorA=020420&colorB=00DC82
 
-[npm-version-href]: https://npmjs.com/package/cyberia-api
+[npm-version-href]: https://npmjs.com/package/rubi-fetch
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/cyberia-api.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-src]: https://img.shields.io/npm/dm/rubi-fetch.svg?style=flat&colorA=020420&colorB=00DC82
 
-[npm-downloads-href]: https://npmjs.com/package/cyberia-api
+[npm-downloads-href]: https://npmjs.com/package/rubi-fetch
 
-[license-src]: https://img.shields.io/npm/l/cyberia-api.svg?style=flat&colorA=020420&colorB=00DC82
+[license-src]: https://img.shields.io/npm/l/rubi-fetch.svg?style=flat&colorA=020420&colorB=00DC82
 
-[license-href]: https://npmjs.com/package/cyberia-api
+[license-href]: https://npmjs.com/package/rubi-fetch
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 
